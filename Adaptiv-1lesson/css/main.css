@@ -1,0 +1,325 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* * {
+    box-sizing: border-box;
+  }
+   */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+.container {
+     max-width: 1230px;
+     /* Поля */
+     /* padding: 0 30px; */
+     margin: 0 auto;
+}
+/* Header */
+
+.header {
+    padding-top: 46px;
+    background: #F1F1F1;
+    padding-bottom: 3em;
+    width: 100%;
+}
+.logo-ru{
+    font-size: 24px;
+    font-weight: 500;
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    font-weight: 700;
+    font-size: 64px;
+    color: black;
+    /* text-shadow: 1px 10px 10px rgb(0, 0, 0); */
+    display: flex;
+    justify-content: center;
+}
+.logo::after {
+    content: "";
+    display: flex;
+    width: 8px;
+    height: 8px;
+    background-color:#7901ad ;
+    border-radius: 50%;
+}
+
+
+/* Nav */
+
+.nav {
+    /* Расстояние между колонками списка */
+    font-weight: 500; 
+    font-size: 14px;
+}
+.nav-list {
+    /* Вытянет слова в строчку */
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button {
+    display: none;
+}
+
+.header-nav  li + li {
+    margin-left: 45px;
+}
+.nav-link {
+    color: black;
+    transition: color 0.2s ease;
+    font-size: 20px;
+}
+.nav-link:hover {
+    color:#7901ad;
+}
+.nav-btn-img {
+    transition: 0.5s all;
+    position: fixed;
+}
+
+/* Directions */
+
+
+.direction {
+    padding: 40px 0;
+}
+.direction-row {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+.direction-card {
+    flex: 1 1 0;
+}
+.direction-card  {
+    display: flex;
+    /* padding-left: 1em; */
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+.service-card-title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Стилизация внутренних элементов */
+.direction-card p  {
+    font-size: 14px;
+    line-height: 2;
+    padding-bottom: 20px;
+    /* padding-left:30px ; */
+    
+}
+.direction-card-img {
+    margin-bottom: 30px;
+    max-width: 280px;
+    min-width: 250px;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    box-shadow: 2px 2px 10px grey;
+}
+.direction-card-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+
+}
+
+.caption {
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-bottom: 10px; */
+    margin: .5em 0;
+    padding: 1.5em 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* teachers */
+
+.direction-grey {
+    background-color:  #F1F1F1 ;
+    width: 100%;
+    height: 35em;
+}
+
+.teachers-card-img {
+    margin-bottom: 1.5em;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+}
+/* Picture */
+
+.img-dancers-section {
+    background-color:  #F1F1F1 ;
+    width: 100%;
+    height: fit-content;
+    padding: 90px 0;
+}
+.img-dancers:hover {
+    box-shadow: 0 0 1em purple ;
+}
+.img-dancers {
+    box-shadow: 0 0 1em rgba(0 , 0 , 0 , 1);
+}
+
+.dancers {
+    width: 100%;
+}
+
+/* Contacts - fixe  */
+
+.header__social-list {
+    list-style-type: none;
+    position: fixed;
+    top: 9em;
+    right: 1em;
+}
+.img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: .5em;
+}
+
+/* Footer - Подвал */
+
+.contacts {
+    padding: 90px 0; 
+    text-align: center;
+}
+.contacts-title {
+    margin-bottom: 1em;
+}
+.title-1 {
+    /* text-decoration: underline; */
+    font-size: 100%;
+    font-weight: 600;
+    /* font-family: 'Poppins' ; */
+    text-transform: uppercase;
+}
+.contacts-content {
+    max-width: 480px;
+    margin-bottom: 1em;
+    font-size: 18px;
+
+    margin: 0 auto 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 22px;
+    border-radius: 30px;
+    background-color:#7901ad;
+    margin: 10px 0 ;
+
+    transition:  0.2s ease-in , top 0.2s ease-in  ;
+}
+.btn:hover  {
+    background-color: #460761;
+}
+/* Изменение при нажатии */
+.btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #000;
+}
+.btn-text {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;    
+}
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    /* По вертикали поцентру */
+    align-items: center;
+    margin-bottom: 1em;
+}
+/* .header__social-item {
+    background-color: #FFF;
+    border-radius:50% ;
+} */
+
+/* About school  */
+
+.about-school-img {
+    float: left;
+    max-width: 400px;
+    max-height: 500px;
+}
+.about-school-text {
+    margin-left: 20px;
+}
+
+.about_school {
+    margin: 5em 0;
+    padding: 20px 0 140px 0;
+    background-color: #F1F1F1;
+    width: 100%;
+    height: fit-content;
+}
+.about-shool-row {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.about-shool-row h3 {
+    margin-bottom: 50px;
+}
+
+.about-school-img {
+    margin-right: 3em;
+    margin-left:1em ;
+}
+.about-school-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.poh-pih:hover {
+    color: #7901ad;
+    text-decoration: underline;
+}
+.poh-pih {
+    transition: 3s;
+    text-transform:uppercase;
+}
+
+/* scale */
+
+.scale {
+    display: inline-block;
+    overflow: hidden;
+}
+.scale img {
+    transition: 1s;
+    display: block;
+}
+
+.scale img:hover {
+    transform: scale(1.1);
+}
+
+/* ..... */
+
+
+.time-table-img {
+    display: flex;
+    justify-content: center;
+}
+

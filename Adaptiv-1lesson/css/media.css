@@ -1,0 +1,187 @@
+@media(max-width: 1230px) {
+    .nav-link {
+        font-size: inherit;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+    .nav.open .nav-list {
+        position: fixed;
+        top: -200px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color:#fff ;
+        z-index: 1;
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        font-weight: 600; 
+        font-size: 34px;
+    }
+    .nav-link {
+        color: black;
+    }
+    .nav-link:hover {
+        color: #828282;
+    }
+    .nav-button {
+        position: fixed;
+        z-index: 5;
+        top: 40px;
+        right: 35px;
+    }
+
+    .logo::after {
+        opacity: 0;
+        /* Запрещает быть целью для любых событий мыши */
+        pointer-events: none;
+        transition: 0.5s all;
+    }
+ 
+
+    .header-nav{
+        margin-bottom: 40px;
+    }
+    .header-logo {
+        flex-direction: column;
+    }
+    .logo-ru {
+        margin-top: 10px;
+    }
+}
+@media (max-width:898px) {
+    .direction-card p  {
+        font-size: 14px;
+        line-height: 2;
+        padding-bottom: 40px;
+        padding-left:30px ;
+    }
+    .direction-grey {
+        height:820px;
+    }
+}
+@media (max-width:800px) {
+    .logo {
+        font-size: 48px;
+    }
+    .logo-ru {
+        font-size: 22px;
+    }
+}
+@media (max-width:700px) {
+    .logo {
+        font-size: 32px;
+    }
+    .logo-ru {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 779px) {
+    .direction-grey {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 440px) {
+    .popap.active {
+        max-width: 300px;
+    }
+    .header__social-list {
+        position: fixed;
+        top: 9em;
+        right: 0.2em;
+    }
+    .container-time {
+        margin: 0px;
+    }
+    .text-about-as {
+        margin-top: 430px;
+    }
+    h1 {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px ) {
+    .about-school-img {
+    float: left;
+    max-width: 400px;
+    max-height: 500px;
+}
+.about-school-text {
+    margin-left: 50px;
+}
+}
+
+
+@media (max-width:680px) {
+    .text-about-as {
+        margin-top: 30px;
+        padding-left: 0px;
+    }
+    .about-school-text {
+        margin-left: 20px;
+    }
+    .about-school-row {
+        margin-bottom: 10px;
+    }    
+}
+
+
+@media (max-width:571px) {
+    .direction-card  {
+        display: flex;
+        margin-left: 1em;
+        flex-direction: column;
+    }
+    
+    .text-about-as {
+        margin-top: 430px;
+    }
+}
+@media (max-width:380px) {
+    .header h1 {
+     padding-left: 5px;
+    } 
+    .logo-ru {
+     padding-left: 5px;
+    }
+    .popap.active {
+     max-width: 250px;
+ }
+  .btn {
+     margin: 20px 8px
+  }
+  .nav-link {
+     font-size: 24px;
+ }
+ .direction-card  {
+     display: flex;
+     margin-left: 1em;
+     flex-direction: column;
+ }
+ }
+@media (max-width:375px) {
+    .header__social-list {
+        display: none;
+    }
+    .text-about-as {
+        margin-top: 320px;
+    }
+}
+
+@media (max-width:469px){
+    .direction-card p {
+        padding-left: 10px;
+    }
+    .direction-card  {
+        margin-left: 0px;
+        text-align: center;
+    }
+}

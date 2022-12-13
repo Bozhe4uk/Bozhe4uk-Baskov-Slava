@@ -1,0 +1,139 @@
+/* Стилизация кнопок */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100% ;
+    height: 100vh;
+}
+.open-popap {
+    display: inline-block;
+    padding: 15px 30px ;
+    text-transform: uppercase;
+    background-color:  #7901ad;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* Стилизация крестика */
+
+.close-popap{
+    width: 30px;
+    height: 30px;
+}
+/* Стилизация input */
+.popap_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0 , 0.5);
+    opacity: 0;
+    /* Запрещает быть целью для любых событий мыши */
+    pointer-events: none;
+    transition: 0.5s all;
+}
+.popap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Для отображения блока по центру нашего экрана */
+    /* scale - Масштабирование (уменьшение ) */
+    transform:translate(-50% , -50%) scale(0);
+    background: #fff;
+    width: 20em;
+    padding: 25px;
+    transition: 0.5s all;
+}
+.popap.active {
+    transform:translate(-50% , -50%) scale(1);
+}
+/* Появление попапа */
+
+.popap_bg.active {
+    opacity: 1;
+    pointer-events:all ;
+    transition: 0.5s all;
+}
+/* ................................ */
+.close-popap {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popap label {
+    width: 100%;
+    margin-bottom: 1.2em;
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+.popap .label_text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+}
+.popap input {
+    height: 2em;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3 ;
+}
+ 
+.popap input:focus {
+    border-bottom: 1px solid#7901ad;
+}
+.popap input:focus + .label_text {
+    color: #7901ad;
+}
+.popap select {
+    width: 100%;
+    height: 2em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid  #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.popap select:focus {
+    border-bottom: 1px solid#7901ad;
+}
+.popap select:focus + .label_text {
+    color: #7901ad;
+}
+
+/* btn */
+
+.popap button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #7901ad ;
+    background: #7901ad;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.popap button:hover {
+    background: #fff;
+    color: #7901ad;
+    transition: 0.5s all;
+}

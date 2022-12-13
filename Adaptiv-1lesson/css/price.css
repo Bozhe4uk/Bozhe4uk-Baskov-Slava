@@ -1,0 +1,87 @@
+body {
+    background-color: #f1f1f1;
+}
+p.oplata {
+    padding: 2em 5px 0 5px;
+    font-size: 20px;
+    color: #7a6b6b;
+    font-style: italic;
+    font-family: 'Poppins' , sans-serif ;
+}
+span.value {
+    font-size: 30px;
+}
+.direction-card {
+    text-align: center;
+    margin-top: 3em;
+    min-width: 300px;
+}
+
+.direction-price {
+    background-color: white ;
+}
+
+
+
+
+/* time-table */
+
+.time-table {
+    background-color: white;
+    padding: 3em 0;
+}
+.time {
+    padding: 1em ;
+    border: 1px solid #7a6b6b;
+}
+.direction-time {
+    width: 100%;
+    background-color: white;
+}
+
+.time {
+    border: 4px double #333; /* Рамка вокруг таблицы */ 
+    border-collapse: separate; /* Способ отображения границы */ 
+    width: 100%; /* Ширина таблицы */ 
+    border-spacing: 7px 11px; /* Расстояние между ячейками */ 
+   }
+  .time td , .time th{
+    padding: 5px; /* Поля вокруг текста */ 
+    border: 1px solid #a52a2a; /* Граница вокруг ячеек */ 
+   }
+
+   .time-table-img {
+    width: 100%;
+   }
+   .caption-time-table {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+   }
+   .container-time {
+    max-width: 1440px;
+    /* Поля */
+    padding: 0 30px;
+    margin: 0 auto;
+   }
+   .direction-time h3 {
+    font-size: 24px;
+   }
+   /* Адаптация таблицы */
+   @media (max-width : 1000px) {
+    .direction-time h3 {
+        font-size: 20px;
+       }
+   }
+   @media (max-width : 700px) {
+    .direction-time h3 {
+        font-size: 14px;
+       }
+   }
+   /* @media (max-width :500px) {
+    .direction-card {
+        text-align: center;
+        margin-top: 3em;
+        min-width: 100px;
+    }
+   } */
